@@ -65,8 +65,6 @@ public abstract class Player {
         return this.legalMoves.contains(move);
     }
     
-    
-    
     public boolean isInCheck(){
         return this.isInCheck;
     }
@@ -88,11 +86,9 @@ public abstract class Player {
         }
         return false;
     }
-    
-    
-    
+        
     public boolean isCastled(){
-        return false;
+        return this.playerKing.isCastled();
     }
     
     public MoveTransition makeMove(final Move move){
